@@ -1,11 +1,10 @@
-
 class NoteApplication {
-    constructor(name) {
+    constructor(author) {
         this.author = author;
-        this.note = note;
-
-
+        this.note = [];
+		
     }
-
-
+	function create(note_content){
+	   note.push(note_content);
+	}
 }
