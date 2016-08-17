@@ -19,10 +19,12 @@ class NoteApplication {
 	    return note[note_id];
 	}
 	function search(search_text){
+	    console.log('Showing result for search');
 	    for (const i =0; i<note.length; i++){
+		     note[i];
 		    for (const j=0; j<i.length; j++){
+			    note[i][j];
 			    if (j===search_text){
-				    console.log('Showing result for search');
 					listnotes();
 				}
 			}	
@@ -32,6 +34,6 @@ class NoteApplication {
 	    delete note[note_id];
 	}
 	function edit (note_id, new_content){
-	    note [note_id]=nwe_content;
+	    note [note_id]=new_content;
 	}
 }
