@@ -1,0 +1,11 @@
+
+class NoteApplication {
+    constructor(name) {
+        this.author = author;
+        this.note = note;
+
+
+    }
+
+
+}
