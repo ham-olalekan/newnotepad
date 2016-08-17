@@ -4,7 +4,17 @@ class NoteApplication {
         this.note = [];
 		
     }
-	function create(note_content){
+	function create(note_content) {
 	   note.push(note_content);
+	}
+	function listnotes() {
+	    for(const note_id=0; note_id<note.length; note_id++) {
+		     console.log('Note ID: '+note_id);
+			 console.log(note[note_id]);
+			 console.log(author);
+			 
+			 
+		}  
+	    
 	}
 }
