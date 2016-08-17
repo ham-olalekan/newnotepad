@@ -13,8 +13,25 @@ class NoteApplication {
 			 console.log(note[note_id]);
 			 console.log(author);
 			 
-			 
-		}  
-	    
+			}  
+	    }
+	function get(note_id){
+	    return note[note_id];
+	}
+	function search(search_text){
+	    for (const i =0; i<note.length; i++){
+		    for (const j=0; j<i.length; j++){
+			    if (j===search_text){
+				    console.log('Showing result for search');
+					listnotes();
+				}
+			}	
+		}
+	}
+	function delete (note_id) {
+	    delete note[note_id];
+	}
+	function edit (note_id, new_content){
+	    note [note_id]=nwe_content;
 	}
 }
